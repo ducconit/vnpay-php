@@ -1,0 +1,39 @@
+{
+    "name": "dnt/vnpay-php",
+    "description": "VNPAY SDK.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DNT\\VNPay\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "Tests\\": "tests/"
+    },
+    "authors": [
+        {
+            "name": "DNT",
+            "email": "ducconit@gmail.com",
+            "homepage": "https://github.com/ducconit"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "saloonphp/saloon": "v3.x-dev"
+    },
+    "require-dev": {
+        "pestphp/pest": "3.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    }
+}
